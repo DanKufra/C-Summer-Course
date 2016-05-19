@@ -1,0 +1,18 @@
+Question 1 -
+There are a couple of reasons:
+    a. The data members of the struct are the how and not the what. The h file is supposed to include
+       things as an interface would without their implementation.
+    b. When declaring the data members it forces the programer to code in a specific way. Rather than
+       leaving the implementation up to him.
+    c. In a situation where two .c files include the h file.
+       However only one uses the MyString struct. In this situation if the struct is defined in the
+       .h file we will get linkage problem (ifndef will not help cause the preprocessor will deal
+       with it), if there is a forward declaration and the definition only in one file the linkqage
+       will work.
+
+Question 2-
+    The compiler's job is to check that everything is in the right place and that we didn't 
+    use methods or structs that we do not have the implementation to. However, it will not care
+    about the actual implementation of these so if we have a foward declaration to our struct it 
+    will assume it was implemented as needed and not care how.
+    

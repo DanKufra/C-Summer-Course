@@ -1,0 +1,54 @@
+==15862== Memcheck, a memory error detector
+==15862== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==15862== Using Valgrind-3.10.0 and LibVEX; rerun with -h for copyright info
+==15862== Command: compiledTests 2
+==15862== 
+Start test for myStringAlloc
+End test for myStringAlloc
+Start test for myStringLen
+End test for myStringLen
+Start test for myStringClone
+End test for myStringClone
+Start test for myStringSetFromMyString
+End test for myStringSetFromMyString
+Start test for MyStringSetFromCString
+End test for MyStringSetFromCString
+Start test for myStringToCString
+End test for MyStringToCString
+Start test for myStringToInt
+End test for myStringToInt
+Start test for myStringCustomEqual
+End test for myStringCustomEqual
+Start test for myStringEqual
+End test for myStringCustomEqual
+Start test for myStringSetFromInt
+End test for myStringSetFromInt
+Start test for myStringSetFilter
+End test for myStringSetFilter
+Start test for myStringCustomCompare
+End test for myStringCustomCompare
+Start test for myStringCompare
+End test for myStringCompare
+Start test for myStringCatTo
+End test for myStringCatTo
+Start test for myStringCat
+End test for myStringCat
+Start test for myStringMemUsage
+End test for myStringMemUsage
+Start test for myStringSort
+End test for myStringSort
+Start test for myStringCustomSort
+End test for myStringCustomSort
+Start test for myStringWrite
+End test for myStringWrite
+Start test for myStringFree
+End test for myStringFree
+==15862== 
+==15862== HEAP SUMMARY:
+==15862==     in use at exit: 0 bytes in 0 blocks
+==15862==   total heap usage: 122 allocs, 122 frees, 3,534 bytes allocated
+==15862== 
+==15862== All heap blocks were freed -- no leaks are possible
+==15862== 
+==15862== For counts of detected and suppressed errors, rerun with: -v
+==15862== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
